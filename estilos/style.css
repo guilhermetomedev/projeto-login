@@ -37,6 +37,7 @@ section {
     height: 680px;
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
+    overflow-y: auto;
 }
 
 div#imagem > img{
