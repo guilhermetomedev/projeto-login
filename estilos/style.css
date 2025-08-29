@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+:root {
+    --fundo1: #024059;
+    --fundo2: #025940;
+    --botaoentrar: #04BF8A;
+    --fundoicones: #026873;
+    --botaohover: #03A64A;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--fundo1), var(--fundo2));
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+div#imagem > img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    height: 280px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    font-size: 2em;
+}
+div#formulario > p{
+    text-align: justify;
+    padding: 1rem;
+}
+label {
+    display: none;
+}
+
+input[type="email"], [type="password"]{
+    border: 2px solid var(--fundo2);
+    height: 50px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+input[type="email"]:hover, [type="password"]:hover{
+    background-color: #04bf8a5b;
+}
+input::placeholder {
+    text-align: left;
+    font-size: 1rem;
+}
+
+input[type="submit"]{
+    display: block;
+    color: white;
+    border: 1px solid var(--botaohover);
+    font-weight: lighter;
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding: 10px 1rem;
+    cursor: pointer;
+    width: 300px;
+    font-size: 1.1rem;
+}
+input#entrar {
+    background-color: #025940;
+}
+input#entrar:hover {
+    background-color: #04BF8A;
+}
+input#esqueciasenha {
+    background-color: white;
+    color: var(--fundo1);
+}
+input#esqueciasenha:hover {
+    background-color: #04bf8a5b;
+    color: var(--fundo1);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="(orientation: landscape)">
+    <link rel="stylesheet" href="estilos/retrato.css" media="(orientation: portrait)">
+    <title>Projeto login</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div id="imagem">
+                <img src="img/pattern.jpg" alt="pattern">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder  fazer as configurações no seu ambiente.</p>
+                <form action="" method="post" autocomplete="on">
+                    <label for="email">email<i class="fa-thin fa-circle-user"></i></label>
+                    <input type="email" name="email" id="email" required placeholder="Digite o seu email"><br>
+                    <label for="senha">senha<i class="fa-thin fa-key"></i></label>
+                    <input type="password" name="senha" id="senha" required placeholder="Sua senha" min="8" max="20">
+                    <input type="submit" value="Entrar" id="entrar">
+                    <input type="submit" value="Esqueci a senha" id="esqueciasenha">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
