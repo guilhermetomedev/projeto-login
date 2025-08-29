@@ -11,7 +11,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body, html {
@@ -34,7 +34,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 350px;
-    height: 700px;
+    height: 680px;
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
 }
@@ -49,31 +49,47 @@ div#imagem > img{
 div#formulario > h1{
     text-align: center;
     font-size: 2em;
+    padding-bottom: 5px;
 }
 div#formulario > p{
     text-align: justify;
-    padding: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
 }
-label {
-    display: none;
+
+div.forms-group {
+    margin-bottom: 15px;
+    display: flex;
+}
+div.forms-group label {
+    border-radius: 8px 0px 0px 8px;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 80px;
+    text-align: right;
+    color: white;
+    background-color: #025940ee;
+    margin-left: 5px;
+    font-size: 1rem;
+}
+div.forms-group input {
+    border-radius: 8px 0px 0px 8px;
+    padding: 10px 10px;
+    margin-right: 5px;
+    flex: 1;
+    border-left: none;
+    border-radius: 0px 8px 8px 0px;
 }
 
 input[type="email"], [type="password"]{
     border: 2px solid var(--fundo2);
     height: 50px;
-    width: 90%;
-    display: block;
-    margin: auto;
-    border-radius: 8px;
-    padding-bottom: 2rem;
-    cursor: pointer;
 }
 input[type="email"]:hover, [type="password"]:hover{
     background-color: #04bf8a5b;
 }
 input::placeholder {
     text-align: left;
-    font-size: 1rem;
+    font-size: 13px;
 }
 
 input[type="submit"]{

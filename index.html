@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/paisagem.css" media="(orientation: landscape)">
     <link rel="stylesheet" href="estilos/retrato.css" media="(orientation: portrait)">
@@ -18,10 +19,14 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder  fazer as configurações no seu ambiente.</p>
                 <form action="" method="post" autocomplete="on">
-                    <label for="email">email<i class="fa-thin fa-circle-user"></i></label>
-                    <input type="email" name="email" id="email" required placeholder="Digite o seu email"><br>
-                    <label for="senha">senha<i class="fa-thin fa-key"></i></label>
-                    <input type="password" name="senha" id="senha" required placeholder="Sua senha" min="8" max="20">
+                    <div class="forms-group">
+                        <label for="email">email:</label>
+                        <input type="email" name="email" id="email" required placeholder="Digite o seu email">
+                    </div>
+                    <div class="forms-group">
+                        <label for="senha">senha:</label>
+                        <input type="password" name="senha" id="senha" required placeholder="Sua senha" min="8" max="20">
+                    </div>
                     <input type="submit" value="Entrar" id="entrar">
                     <input type="submit" value="Esqueci a senha" id="esqueciasenha">
                 </form>
