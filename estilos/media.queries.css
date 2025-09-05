@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 620px) and (max-width: 1200px){ /*Tablet*/
+    section {
+        width: 100%;
+        transform: translate(-50%, -50%);
+        width: 800px;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1rem;
+        overflow-y: auto;
+        margin-bottom: 100px;
+    }
+
+    div#imagem {
+    width: 500px;
+    height: 500px;
+    }
+
+    div#formulario h1 p forms{
+        width: 500px;
+        height: 500px;
+        float: right;
+    }
+}

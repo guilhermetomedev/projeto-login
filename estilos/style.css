@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+/*
+Celulares pequenos: 320px – 375px
+Celulares grandes: 414px – 428px
+Tablets: 600px – 1024px
+Notebooks: 1280px – 1440px
+Monitores: 1920px (Full HD), 2560px
+*/
+
 :root {
     --fundo1: #024059;
     --fundo2: #025940;
@@ -37,10 +45,14 @@ section {
     height: 680px;
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
-    overflow-y: auto;
+    margin-bottom: 100px;
 }
 
-div#imagem > img{
+div#imagem {
+    background-image: url(../img/pattern.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     width: 100%;
